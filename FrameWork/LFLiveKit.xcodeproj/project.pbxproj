@@ -663,6 +663,8 @@
 		84D8B5E81D768B6E00752B56 /* LFStreamSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D8B5B81D768B6E00752B56 /* LFStreamSocket.h */; };
 		84D8B5E91D768B6E00752B56 /* NSMutableArray+LFAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D8B5B91D768B6E00752B56 /* NSMutableArray+LFAdd.h */; };
 		84D8B5EA1D768B6E00752B56 /* NSMutableArray+LFAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8B5BA1D768B6E00752B56 /* NSMutableArray+LFAdd.m */; };
+		D973F0FC211C7CA200C65ED6 /* LFCustomFIlterTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D973F0FB211C7CA200C65ED6 /* LFCustomFIlterTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D973F0FD211C7CA500C65ED6 /* LFCustomFIlterTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D973F0FB211C7CA200C65ED6 /* LFCustomFIlterTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1097,6 +1099,7 @@
 		84D8B5B81D768B6E00752B56 /* LFStreamSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFStreamSocket.h; sourceTree = "<group>"; };
 		84D8B5B91D768B6E00752B56 /* NSMutableArray+LFAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LFAdd.h"; sourceTree = "<group>"; };
 		84D8B5BA1D768B6E00752B56 /* NSMutableArray+LFAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LFAdd.m"; sourceTree = "<group>"; };
+		D973F0FB211C7CA200C65ED6 /* LFCustomFIlterTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCustomFIlterTypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1565,6 +1568,7 @@
 				84D8B5891D768B6E00752B56 /* coder */,
 				84D8B59B1D768B6E00752B56 /* configuration */,
 				84D8B5A01D768B6E00752B56 /* filter */,
+				D973F0FB211C7CA200C65ED6 /* LFCustomFIlterTypes.h */,
 				84D8B5A51D768B6E00752B56 /* LFLiveKit.h */,
 				84D8B5A61D768B6E00752B56 /* LFLiveSession.h */,
 				84D8B5A71D768B6E00752B56 /* LFLiveSession.m */,
@@ -1704,6 +1708,7 @@
 				8495F67A1DB8F1EE00542124 /* LFH264VideoEncoder.h in Headers */,
 				8495F67B1DB8F1EE00542124 /* LFHardwareAudioEncoder.h in Headers */,
 				8495F67C1DB8F1EE00542124 /* LFHardwareVideoEncoder.h in Headers */,
+				D973F0FD211C7CA500C65ED6 /* LFCustomFIlterTypes.h in Headers */,
 				8495F67D1DB8F1EE00542124 /* LFVideoEncoding.h in Headers */,
 				8495F6801DB8F1EE00542124 /* LFGPUImageBeautyFilter.h in Headers */,
 				8495F6811DB8F1EE00542124 /* LFGPUImageEmptyFilter.h in Headers */,
@@ -1781,6 +1786,7 @@
 				843590CF1DD1FEB600811FC7 /* GPUImagePixellateFilter.h in Headers */,
 				843591411DD1FEB600811FC7 /* GPUImageZoomBlurFilter.h in Headers */,
 				843590591DD1FEB600811FC7 /* GPUImageFramebuffer.h in Headers */,
+				D973F0FC211C7CA200C65ED6 /* LFCustomFIlterTypes.h in Headers */,
 				843590A91DD1FEB600811FC7 /* GPUImageMedianFilter.h in Headers */,
 				8435910B1DD1FEB600811FC7 /* GPUImageSphereRefractionFilter.h in Headers */,
 				843590BD1DD1FEB600811FC7 /* GPUImageNonMaximumSuppressionFilter.h in Headers */,

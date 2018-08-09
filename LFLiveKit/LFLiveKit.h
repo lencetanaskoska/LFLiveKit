@@ -17,6 +17,7 @@
 #import "LFLiveStreamInfo.h"
 #import "LFVideoFrame.h"
 #import "LFLiveDebug.h"
+#import "LFCustomFIlterTypes.h"
 
 #endif
 

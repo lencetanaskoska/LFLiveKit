@@ -15,6 +15,7 @@
 #import "LFLiveAudioConfiguration.h"
 #import "LFLiveVideoConfiguration.h"
 #import "LFLiveDebug.h"
+#import "LFCustomFIlterTypes.h"
 
 
 
@@ -76,6 +77,9 @@ typedef NS_ENUM(NSInteger,LFLiveCaptureTypeMask) {
 
 /** The beautyLevel control beautyFace Level. Default is 0.5, between 0.0 ~ 1.0 */
 @property (nonatomic, assign) CGFloat beautyLevel;
+
+/** The custom filter - none or some filter */
+@property (nonatomic, assign) CustomFilter customFilter;
 
 /** The brightLevel control brightness Level, Default is 0.5, between 0.0 ~ 1.0 */
 @property (nonatomic, assign) CGFloat brightLevel;

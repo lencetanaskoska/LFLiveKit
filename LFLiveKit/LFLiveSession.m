@@ -282,6 +282,16 @@
     return self.videoCaptureSource.beautyLevel;
 }
 
+- (CustomFilter)customFilter {
+    return self.videoCaptureSource.customFilterType;
+}
+
+- (void)setCustomFilter:(CustomFilter)customFilter {
+    [self willChangeValueForKey:@"customFilter"];
+    [self.videoCaptureSource setCustomFilterType:customFilter];
+    [self didChangeValueForKey:@"customFilter"];
+}
+
 - (void)setBrightLevel:(CGFloat)brightLevel {
     [self willChangeValueForKey:@"brightLevel"];
     [self.videoCaptureSource setBrightLevel:brightLevel];

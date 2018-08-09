@@ -56,6 +56,7 @@
         self.brightLevel = 0.5;
         self.zoomScale = 1.0;
         self.mirror = YES;
+        self.customFilterType = CustomFilterNone;
     }
     return self;
 }
@@ -164,6 +165,9 @@
 
 - (void)setBeautyFace:(BOOL)beautyFace{
     _beautyFace = beautyFace;
+    if(_customFilterType != CustomFilterNone && _beautyFace){
+        _customFilterType = CustomFilterNone;
+    }
     [self reloadFilter];
 }
 
@@ -176,6 +180,14 @@
 
 - (CGFloat)beautyLevel {
     return _beautyLevel;
+}
+
+- (void)setCustomFilterType:(CustomFilter)customFilter{
+    _customFilterType = customFilter;
+    if(customFilter != CustomFilterNone && _beautyFace){
+        _beautyFace = NO;
+    }
+    [self reloadFilter];
 }
 
 - (void)setBrightLevel:(CGFloat)brightLevel {
@@ -291,7 +303,23 @@
         self.output = [[LFGPUImageEmptyFilter alloc] init];
         self.filter = [[LFGPUImageBeautyFilter alloc] init];
         self.beautyFilter = (LFGPUImageBeautyFilter*)self.filter;
-    } else {
+    }
+    else if (self.customFilterType != CustomFilterNone) {
+        self.output = [[LFGPUImageEmptyFilter alloc] init];
+        switch (self.customFilterType) {
+            case CustomFilterPolkaDot:
+                self.filter = [[GPUImagePolkaDotFilter alloc] init];
+                break;
+            case CustomFilterPosterize:
+                self.filter = [[GPUImagePosterizeFilter alloc] init];
+                break;
+            default:
+                self.filter = [[LFGPUImageEmptyFilter alloc] init];
+                break;
+        }
+        self.beautyFilter = nil;
+    }
+    else {
         self.output = [[LFGPUImageEmptyFilter alloc] init];
         self.filter = [[LFGPUImageEmptyFilter alloc] init];
         self.beautyFilter = nil;

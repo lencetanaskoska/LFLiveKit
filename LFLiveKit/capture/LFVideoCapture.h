@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import "LFLiveVideoConfiguration.h"
+#import "LFCustomFIlterTypes.h"
 
 @class LFVideoCapture;
 /** LFVideoCapture callback videoData */
@@ -67,6 +68,9 @@
 
 /* The saveLocalVideoPath is save the local video  path */
 @property (nonatomic, strong, nullable) NSURL *saveLocalVideoPath;
+
+/** The custom filter */
+@property (nonatomic, assign) CustomFilter customFilterType;
 
 #pragma mark - Initializer
 ///=============================================================================
