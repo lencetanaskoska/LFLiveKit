@@ -313,6 +313,24 @@
             case CustomFilterPosterize:
                 self.filter = [[GPUImagePosterizeFilter alloc] init];
                 break;
+            case CustomFilterGrayscale:
+                self.filter = [[GPUImageGrayscaleFilter alloc] init];
+                break;
+            case CustomFilterHaze:
+                self.filter = [[GPUImageHazeFilter alloc] init];
+                break;
+            case CustomFilterMonochrome:
+                self.filter = [[GPUImageMonochromeFilter alloc] init];
+                break;
+            case CustomFilterPixellate:
+                self.filter = [[GPUImagePixellateFilter alloc] init];
+                break;
+            case CustomFilterSepia:
+                self.filter = [[GPUImageSepiaFilter alloc] init];
+                break;
+            case CustomFilterSketch:
+                self.filter = [[GPUImageSketchFilter alloc] init];
+                break;
             default:
                 self.filter = [[LFGPUImageEmptyFilter alloc] init];
                 break;

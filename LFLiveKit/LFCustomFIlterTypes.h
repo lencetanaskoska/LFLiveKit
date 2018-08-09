@@ -12,7 +12,13 @@
 typedef enum {
     CustomFilterNone,
     CustomFilterPolkaDot,
-    CustomFilterPosterize
+    CustomFilterPosterize,
+    CustomFilterGrayscale,
+    CustomFilterHaze,
+    CustomFilterMonochrome,
+    CustomFilterPixellate,
+    CustomFilterSepia,
+    CustomFilterSketch
 } CustomFilter;
 
 
