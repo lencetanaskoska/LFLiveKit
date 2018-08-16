@@ -9,6 +9,7 @@
 #import "LFAudioCapture.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
+#import <math.h>
 
 NSString *const LFAudioComponentFailedToCreateNotification = @"LFAudioComponentFailedToCreateNotification";
 
@@ -248,7 +249,21 @@ static OSStatus handleInputBuffer(void *inRefCon,
 
         if (!status) {
             if (source.delegate && [source.delegate respondsToSelector:@selector(captureOutput:audioData:)]) {
-                [source.delegate captureOutput:source audioData:[NSData dataWithBytes:buffers.mBuffers[0].mData length:buffers.mBuffers[0].mDataByteSize]];
+                SInt16* data = buffers.mBuffers[0].mData;
+                int length = buffers.mBuffers[0].mDataByteSize;
+                double max = 0;
+                for (int i=0; i<length; i++) {
+                    int dat = (int)(data[i]);
+                    int abs;
+                    abs = dat * dat / dat;
+                    if (abs > max) {
+                        max = abs;
+                    }
+                }
+                double resultval = 0;
+                resultval = 20*log10(max/SHRT_MAX);
+                [source.delegate captureOutput:source audioData:[NSData dataWithBytes:data length:length]];
+                [source.delegate captureOutputDB:resultval];
             }
         }
         return status;
