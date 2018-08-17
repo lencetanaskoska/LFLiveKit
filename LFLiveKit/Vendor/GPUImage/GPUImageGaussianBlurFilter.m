@@ -19,7 +19,7 @@
     }
     
     self.texelSpacingMultiplier = 1.0;
-    _blurRadiusInPixels = 2.0;
+    _blurRadiusInPixels = 6.0;
     shouldResizeBlurRadiusWithImageSize = NO;
     
     return self;

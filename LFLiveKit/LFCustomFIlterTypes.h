@@ -21,7 +21,10 @@ typedef enum {
     CustomFilterSketch,
     CustomFilter3x3Convolution,
     CustomFilterGaussianBlurFilter,
-    CustomFilterColorInvert
+    CustomFilterColorInvert,
+    CustomFilterFishEye,
+    CustomFilterCrosshatch,
+    CustomFilterCGAColor
 } CustomFilter;
 
 

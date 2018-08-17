@@ -340,6 +340,15 @@
             case CustomFilterColorInvert:
                 self.filter = [[GPUImageColorInvertFilter alloc] init];
                 break;
+            case CustomFilterFishEye:
+                self.filter = [[GPUImageGlassSphereFilter alloc] init];
+                break;
+            case CustomFilterCrosshatch:
+                self.filter = [[GPUImageCrosshatchFilter alloc] init];
+                break;
+            case CustomFilterCGAColor:
+                self.filter = [[GPUImageCGAColorspaceFilter alloc] init];
+                break;
             default:
                 self.filter = [[LFGPUImageEmptyFilter alloc] init];
                 break;
