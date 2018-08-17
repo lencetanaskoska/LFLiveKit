@@ -18,7 +18,10 @@ typedef enum {
     CustomFilterMonochrome,
     CustomFilterPixellate,
     CustomFilterSepia,
-    CustomFilterSketch
+    CustomFilterSketch,
+    CustomFilter3x3Convolution,
+    CustomFilterGaussianBlurFilter,
+    CustomFilterColorInvert
 } CustomFilter;
 
 

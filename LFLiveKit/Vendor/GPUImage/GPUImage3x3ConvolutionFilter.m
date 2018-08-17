@@ -93,11 +93,18 @@ NSString *const kGPUImage3x3ConvolutionFragmentShaderString = SHADER_STRING
     {
 		return nil;
     }
-
+    //change matrix for different shades
+    /**
+     * GPUimage3x3ConvolutionFilter with default values,
+     *      0.0f, 0.0f, 0.0f,
+     *      0.0f, 1.0f, 0.0f,
+     *      0.0f, 0.0f, 0.0f
+     * will look like the original image.
+     */
     self.convolutionKernel = (GPUMatrix3x3){
-        {0.f, 0.f, 0.f},
-        {0.f, 1.f, 0.f},
-        {0.f, 0.f, 0.f}
+        {-1.f, 0.f, 1.f},
+        {-2.f, 0.f, 2.f},
+        {-1.f, 0.f, 1.f}
     };
 
     return self;

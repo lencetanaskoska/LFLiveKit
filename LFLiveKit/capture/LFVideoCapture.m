@@ -331,6 +331,15 @@
             case CustomFilterSketch:
                 self.filter = [[GPUImageSketchFilter alloc] init];
                 break;
+            case CustomFilter3x3Convolution:
+                self.filter = [[GPUImage3x3ConvolutionFilter alloc] init];
+                break;
+            case CustomFilterGaussianBlurFilter:
+                self.filter = [[GPUImageGaussianBlurFilter alloc] init];
+                break;
+            case CustomFilterColorInvert:
+                self.filter = [[GPUImageColorInvertFilter alloc] init];
+                break;
             default:
                 self.filter = [[LFGPUImageEmptyFilter alloc] init];
                 break;
