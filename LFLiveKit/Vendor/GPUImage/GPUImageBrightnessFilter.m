@@ -47,7 +47,7 @@ NSString *const kGPUImageBrightnessFragmentShaderString = SHADER_STRING
     }
     
     brightnessUniform = [filterProgram uniformIndex:@"brightness"];
-    self.brightness = 0.0;
+    self.brightness = 0.15;
     
     return self;
 }

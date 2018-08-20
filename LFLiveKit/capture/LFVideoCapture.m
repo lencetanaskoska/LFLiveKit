@@ -349,6 +349,15 @@
             case CustomFilterCGAColor:
                 self.filter = [[GPUImageCGAColorspaceFilter alloc] init];
                 break;
+            case CustomFilterSobelEdge:
+                self.filter = [[GPUImageSobelEdgeDetectionFilter alloc] init];
+                break;
+            case CustomFilterWhitening:
+                self.filter = [[GPUImageBrightnessFilter alloc] init];
+                break;
+            case CustomFilterColorMix:
+                self.filter = [[GPUImageRGBFilter alloc] init];
+                break;
             default:
                 self.filter = [[LFGPUImageEmptyFilter alloc] init];
                 break;
