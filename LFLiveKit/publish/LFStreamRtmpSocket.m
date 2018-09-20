@@ -534,7 +534,7 @@ Failed:
 void RTMPErrorCallback(RTMPError *error, void *userData) {
     LFStreamRTMPSocket *socket = (__bridge LFStreamRTMPSocket *)userData;
     if (error->code < 0) {
-        [socket reconnect];
+//        [socket reconnect];
     }
 }
 
