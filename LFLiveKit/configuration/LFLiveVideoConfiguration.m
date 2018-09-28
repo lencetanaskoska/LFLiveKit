@@ -32,9 +32,9 @@
         configuration.videoFrameRate = 15;
         configuration.videoMaxFrameRate = 15;
         configuration.videoMinFrameRate = 10;
-        configuration.videoBitRate = 500 * 1000;
-        configuration.videoMaxBitRate = 600 * 1000;
-        configuration.videoMinBitRate = 400 * 1000;
+        configuration.videoBitRate = 370 * 1000;
+        configuration.videoMaxBitRate = 400 * 1000;
+        configuration.videoMinBitRate = 300 * 1000;
         configuration.videoSize = CGSizeMake(360, 640);
     }
         break;
@@ -43,9 +43,9 @@
         configuration.videoFrameRate = 24;
         configuration.videoMaxFrameRate = 24;
         configuration.videoMinFrameRate = 12;
-        configuration.videoBitRate = 600 * 1000;
-        configuration.videoMaxBitRate = 720 * 1000;
-        configuration.videoMinBitRate = 500 * 1000;
+        configuration.videoBitRate = 370 * 1000;
+        configuration.videoMaxBitRate = 400 * 1000;
+        configuration.videoMinBitRate = 300 * 1000;
         configuration.videoSize = CGSizeMake(360, 640);
     }
         break;
@@ -98,8 +98,8 @@
         configuration.videoFrameRate = 15;
         configuration.videoMaxFrameRate = 15;
         configuration.videoMinFrameRate = 10;
-        configuration.videoBitRate = 1000 * 1000;
-        configuration.videoMaxBitRate = 1200 * 1000;
+        configuration.videoBitRate = 650 * 1000;
+        configuration.videoMaxBitRate = 700 * 1000;
         configuration.videoMinBitRate = 500 * 1000;
         configuration.videoSize = CGSizeMake(720, 1280);
     }
@@ -120,8 +120,8 @@
         configuration.videoFrameRate = 30;
         configuration.videoMaxFrameRate = 30;
         configuration.videoMinFrameRate = 15;
-        configuration.videoBitRate = 1200 * 1000;
-        configuration.videoMaxBitRate = 1440 * 1000;
+        configuration.videoBitRate = 1350 * 1000;
+        configuration.videoMaxBitRate = 1400 * 1000;
         configuration.videoMinBitRate = 500 * 1000;
         configuration.videoSize = CGSizeMake(720, 1280);
     }
