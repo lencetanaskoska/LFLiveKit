@@ -43,9 +43,9 @@
         configuration.videoFrameRate = 24;
         configuration.videoMaxFrameRate = 24;
         configuration.videoMinFrameRate = 12;
-        configuration.videoBitRate = 370 * 1000;
-        configuration.videoMaxBitRate = 400 * 1000;
-        configuration.videoMinBitRate = 300 * 1000;
+        configuration.videoBitRate = 190 * 1000;
+        configuration.videoMaxBitRate = 200 * 1000;
+        configuration.videoMinBitRate = 150 * 1000;
         configuration.videoSize = CGSizeMake(360, 640);
     }
         break;
